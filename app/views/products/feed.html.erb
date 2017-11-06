@@ -17,6 +17,7 @@
       <tr>
         <th></th>
         <th>Name</th>
+        <th>Condition</th>
         <th>Price</th>
         <th>Active</th>
         <th>Order</th>
@@ -28,6 +29,7 @@
           <tr>
             <td><%= image_tag product.avatar.url(:thumb), style:"height:50px" %></td>
             <td><%= product.name %></td>
+            <td><%= product.condition %></td>
             <td><%= product.price %></td>
             <td><%= product.active %></td>
             <td><%= product.order_id %></td>
@@ -48,4 +50,3 @@
     </table>
   </div><!-- /.sheet-inner -->
 </div><!-- /.sheet -->
-

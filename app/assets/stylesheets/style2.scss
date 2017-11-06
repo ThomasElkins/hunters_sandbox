@@ -4,7 +4,7 @@
   width:80px;
   height: 100px;
   .blocked{ display:block; text-align:center}
-  .order-title{font-size: 15px;}
+  .order-title{font-size: 20px;}
   .order-image{
     height: auto;
     img {max-width: 150px; max-height: 150px;}
@@ -73,11 +73,18 @@ body#splash_body{
 }
 
 .wishlist_block{
-  float:left;
-  margin-right: 80px;
-  margin-bottom: 100px;
+  width: 20%;
+  background-color: #EEEEEE;
+  border-radius: 2%;
+  height: 60vh;
+  border: 1px black solid;
+  box-shadow: 5px 6px 16px -1px rgba(128,128,128,1);
 }
 
+.order-image{
+  border-radius: 2%;
+  border: 1px black solid;
+}
 
 $full_product_size : 322px;
 $mobile_product_size : 260px;

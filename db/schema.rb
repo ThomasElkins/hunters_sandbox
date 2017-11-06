@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(version: 20150917195900) do
 
   create_table "products", force: :cascade do |t|
     t.string   "name"
+    t.string   "condition"
     t.decimal  "price",               precision: 12, scale: 2
     t.boolean  "active"
     t.integer  "order_id"

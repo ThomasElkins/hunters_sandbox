@@ -15,6 +15,7 @@
         <tr>
           <th></th>
           <th>Name</th>
+          <th>Condition</th>
           <th>Price</th>
           <th>Active</th>
           <th></th>
@@ -24,7 +25,8 @@
       <% @products.each do |product| %>
         <tr>
           <td><%= link_to (image_tag product.avatar.url(:thumb), style:"height:50px"),product %></td>
-          <td><%= product.name %></td>
+          <td><%= link_to product.name, product %></td>
+          <td><%= product.condition %></td>
           <td><%= product.price %></td>
           <td><%= product.active %></td>
           <td class="actions">
@@ -44,4 +46,3 @@
     </table>
   </div><!-- /.sheet-inner -->
 </div><!-- /.sheet -->
-
